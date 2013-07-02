@@ -1,9 +1,10 @@
 {
-    "name": "CORS middleware example",
-    "version": "0.0.1",
+    "name": "w3c-cors-example",
+    "description": "CORS middleware example",
+    "version": "0.2.0",
     "dependencies": {
         "express": "*",
-        "CORS": "*"
+        "w3c-cors": "*"
     },
     "author": {
         "name": "Guillaume Biton"
