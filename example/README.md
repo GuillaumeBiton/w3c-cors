@@ -8,4 +8,5 @@ CORS middleware example
 # Usage
 
     node server
-
+    
+Connect to the [client](http://localhost:4000)
