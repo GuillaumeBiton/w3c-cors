@@ -1,7 +1,7 @@
 {
     "name": "w3c-cors-example",
     "description": "CORS middleware example",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "dependencies": {
         "express": "*",
         "w3c-cors": "*"

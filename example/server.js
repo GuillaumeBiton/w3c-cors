@@ -10,7 +10,11 @@
 
   client = express();
 
-  server.get('/', CORS(require(__dirname + '/config.json')), function(req, res) {
+  server.use(CORS(function() {
+    return require(__dirname + '/config');
+  }));
+
+  server.get('/', function(req, res) {
     return res.send('Hello');
   });
 
