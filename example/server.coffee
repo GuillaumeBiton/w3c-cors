@@ -4,10 +4,12 @@ CORS = require 'w3c-cors'
 server = express()
 client = express()
 
+###
 server.use CORS ->
     require __dirname + '/config'
-    
-server.get '/', (req, res) ->
+###
+
+server.all '/', CORS require __dirname + '/config', (req, res) ->
     res.send 'Hello'
 
 client.use express.static __dirname

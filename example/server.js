@@ -10,13 +10,15 @@
 
   client = express();
 
-  server.use(CORS(function() {
-    return require(__dirname + '/config');
-  }));
+  /*
+  server.use CORS ->
+      require __dirname + '/config'
+  */
 
-  server.get('/', function(req, res) {
+
+  server.all('/', CORS(require(__dirname + '/config', function(req, res) {
     return res.send('Hello');
-  });
+  })));
 
   client.use(express["static"](__dirname));
 

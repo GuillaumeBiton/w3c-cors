@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script>
         function MainCtrl($scope, $http) {
+            delete $http.defaults.headers.common['X-Requested-With'];
             $http.get('http://localhost:3000').success(function(data) {
                 $scope.data = data;
             });
