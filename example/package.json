@@ -1,0 +1,11 @@
+{
+    "name": "CORS middleware example",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "*",
+        "CORS": "*"
+    },
+    "author": {
+        "name": "Guillaume Biton"
+    }
+}
