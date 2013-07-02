@@ -9,7 +9,7 @@ server.use CORS ->
     require __dirname + '/config'
 ###
 
-server.all '/', CORS require __dirname + '/config', (req, res) ->
+server.all '/', CORS(require __dirname + '/config'), (req, res) ->
     res.send 'Hello'
 
 client.use express.static __dirname

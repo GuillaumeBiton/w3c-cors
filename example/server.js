@@ -16,9 +16,9 @@
   */
 
 
-  server.all('/', CORS(require(__dirname + '/config', function(req, res) {
+  server.all('/', CORS(require(__dirname + '/config')), function(req, res) {
     return res.send('Hello');
-  })));
+  });
 
   client.use(express["static"](__dirname));
 
